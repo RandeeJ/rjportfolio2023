@@ -1,0 +1,90 @@
+// body {
+//   background: linear-gradient(90deg, #c9d6ff 0%, #e2e2e2 100%);
+// }
+
+// .morning {
+//   background-image: linear-gradient(135deg, #eaecc6 0%, #2bc0e4 100%) no-repeat;
+// }
+
+// .day {
+//   background-image: linear-gradient(135deg, #ffc837 0% #ff8008 100%) no-repeat;
+// }
+
+// .evening {
+//   background-image: linear-gradient(125deg, #cc5333 0%, #23074d 100%) no-repeat;
+// }
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.about-me-contact {
+  grid-row: 2;
+  grid-column: 1;
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  // grid-template-columns: 200px 1fr;
+}
+
+.about-me-contact-info {
+  grid-row: 1;
+  // grid-column: 1;
+  text-align: center;
+}
+.about-me-contact-button {
+  grid-row: 2;
+  // grid-column: 1;
+  background-color: #0a66c2;
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: 3px 3px 3px 0px lavender;
+  border: white;
+  font-size: 20px;
+  width: 120px;
+  justify-self: center;
+  cursor: pointer;
+  z-index: 1;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.about-me-bio {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 80px 1fr;
+}
+
+.about-me-bio-introduction {
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Candal", sans-serif;
+  font-size: 50px;
+  margin-left: 30px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.about-me-bio-bio {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 20px;
+  width: 75%;
+  text-align: center;
+  justify-self: center;
+  line-height: 30px;
+
+  ul {
+    list-style-type: none;
+    margin-top: 40px;
+    padding: 0;
+    line-height: 40px;
+  }
+}

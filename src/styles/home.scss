@@ -1,0 +1,9 @@
+.home-container {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.todo {
+  padding: 20px;
+  grid-row: 2;
+}
