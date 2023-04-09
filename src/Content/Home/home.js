@@ -7,7 +7,6 @@ class Home extends Component {
       <div className="home-container">
         <About />
         <div className="todo">
-          <p>
             Next time:
             <ul>
               <li>Find some templates that you like and start designing</li>
@@ -17,7 +16,6 @@ class Home extends Component {
                 and blog page
               </li>
             </ul>
-          </p>
 
           <h1> YOU GOT THIS!</h1>
         </div>

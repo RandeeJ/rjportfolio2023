@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import BlogHeader from "./header";
-import { blogPosts } from "./posts/blogPosts";
+import { BlogPosts } from "./posts/blogPosts";
 import BlogList from "./list";
 import BlogSearch from "./searchBar";
 
 class Journal extends Component {
   render() {
+
+
     return (
       <div className="blogPost">
         {/* Page Header */}
@@ -13,9 +15,12 @@ class Journal extends Component {
         {/* Search Bar */}
         <BlogSearch />
         {/* Blog List and Empty List */}
-        <BlogList blogs={blogPosts} />
+        <BlogList blogs={BlogPosts} />
       </div>
     );
+    }
+  }
+    export default Journal;
 
     // return (
     //       <div>
@@ -113,42 +118,42 @@ class Journal extends Component {
     //           </pre>
     //         </div>
 
-    {
-      /* ENTRY 3
+//     {
+//       /* ENTRY 3
 
-https://stackoverflow.com/questions/53914013/failed-to-compile-module-not-found-cant-resolve-react-router-dom
+// https://stackoverflow.com/questions/53914013/failed-to-compile-module-not-found-cant-resolve-react-router-dom
 
-switching to react-router-dom*/
-    }
+// switching to react-router-dom*/
+//     }
 
-    {
-      /* ENTRY 4
+//     {
+//       /* ENTRY 4
 
-https://www.youtube.com/watch?v=uvB4cUi4RrI&t=923s&ab_channel=edutechional
+// https://www.youtube.com/watch?v=uvB4cUi4RrI&t=923s&ab_channel=edutechional
 
-How to Navigate Between Pages in React with React Router
-*/
-    }
+// How to Navigate Between Pages in React with React Router
+// */
+//     }
 
-    {
-      /* 
-ENTRY 5
-scss/sass upgrade
-@use instead of @import */
-    }
+//     {
+//       /* 
+// ENTRY 5
+// scss/sass upgrade
+// @use instead of @import */
+//     }
 
-    {
-      /* ENTRY 6
-https://write.corbpie.com/change-background-and-text-based-on-time-with-javascript/
-change background based on time of day */
-    }
+//     {
+//       /* ENTRY 6
+// https://write.corbpie.com/change-background-and-text-based-on-time-with-javascript/
+// change background based on time of day */
+//     }
 
-    {
-      /* NEXT JOURNAL ENTRY ABOVE HERE */
-    }
-    // </div>
-    // );
-  }
-}
+//     {
+//       /* NEXT JOURNAL ENTRY ABOVE HERE */
+//     }
+//     // </div>
+//     // );
+//   }
+// }
 
-export default Journal;
+// export default Journal;

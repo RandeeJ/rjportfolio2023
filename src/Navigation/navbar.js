@@ -9,18 +9,18 @@ class NavBar extends Component {
 
         <div className="navbar-links">
           <div className="navbar-link home">
-            <Link to="/">Home</Link>
+            <Link to="/">HOME</Link>
           </div>
           <div className="navbar-link projects">
-            <Link to="/myProjects">My Projects</Link>
+            <Link to="/myProjects">MY PROJECTS</Link>
           </div>
 
           <div className="navbar-link journal">
-            <Link to="/codingJournal">Coding Journal</Link>
+            <Link to="/codingJournal">CODING JOURNAL</Link>
           </div>
 
           <div className="navbar-link mathematizedmind">
-            <Link to="/theMathematizedMind">The Mathematized Mind</Link>
+            <Link to="/theMathematizedMind">THE MATHEMATIZED MIND</Link>
           </div>
         </div>
       </div>

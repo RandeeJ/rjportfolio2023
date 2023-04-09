@@ -4,7 +4,7 @@ import BlogItem from "./item";
 const BlogList = ({ blogs }) => (
   <div className="blogList">
     {blogs.map((blog) => (
-      <BlogItem blog={blog} key={blog.id} />
+      <BlogItem blog={blog} key={blog.id}/>
     ))}
   </div>
 );
