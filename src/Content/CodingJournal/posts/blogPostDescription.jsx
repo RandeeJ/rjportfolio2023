@@ -4,31 +4,61 @@ import { useParams, useLocation } from 'react-router-dom';
 const BlogPostDescription = (props) => {
     const location = useLocation();
     const description = location.state ?  location.state.description.content : null;
-    console.log("description", description)
+    const link = location.state ? location.state.link.referenceLink : null;
+    const blogTitle = location.state ? location.state.blogTitle.title : null;
+    const blogAuthor = location.state ? location.state.blogAuthor.myName : null;
+    const blogDate = location.state ? location.state.blogDate.createdAt : null;
+
+
 
 
     if (!description){
       return <div> No description available! :( </div>
-    } else
+    } else{
 
     return (
     <div className="blogPost">
+
+<div className='blogPost-title'>{blogTitle}</div>
+<div className='blogPost-author'>{blogAuthor}</div>
+<div className='blogPost-date'>{blogDate}</div>
+
+
+      <div className='blogPost-description'>
             {description.map((item, index) => {
               if (item.type === "text") {
-                return <p key={index}>{item.value}</p>;
+                return <p className="blogPost-description-text" key={index}>{item.value}</p>;
               } else if (item.type === "code") {
-                return (<pre key={index}><code>{item.value}</code></pre>);
+                return (<pre key={index}><code className="blogPost-description-code">{item.value}</code></pre>);
               } else if (item.type === "h2heading") {
-                return <h2 key={index}>{item.value}</h2>;
+                return <h2 className="blogPost-description-h2"key={index}>{item.value}</h2>;
               } else if (item.type === "h3heading") {
-                return <h3 key={index}>{item.value}</h3>
+                return <h3 className="blogPost-description-h3"key={index}>{item.value}</h3>
               }
               return null;
             }
             )}
+            </div>
+
+            <div className='blogPost-reference'>
+              For more information, check out: <ul>{link.map((item, index) => {
+              if (item.type === "link") {
+                return <li key={index}><a className="blogPost-reference-link" href={item.value} >{item.title}</a></li>;
+              }
+              return null;
+          
+            }
+            )}
+            </ul>
+
+
+
+
+
+            </div>
         </div>
     )
-    
+          }
 }
 export default BlogPostDescription;
 

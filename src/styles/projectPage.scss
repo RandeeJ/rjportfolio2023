@@ -1,0 +1,113 @@
+.projects-container {
+  margin: 40px 15px 5px 15px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: #99acf1 solid 5px;
+}
+
+.coding-projects-container {
+  padding: 15px;
+  margin: 5px 15px 5px 15px;
+  grid-column: 1;
+  border: #99acf1 dashed 2px;
+}
+
+.data-projects-container {
+  grid-column: 2;
+  margin: 5px 15px 5px 5px;
+  padding: 15px;
+  border: #99acf1 dashed 2px;
+}
+
+.container-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: #99acf1 solid 1px;
+}
+
+.container-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: #99acf1 solid 1px;
+
+  a {
+    color: white;
+    // text-decoration: none;
+  }
+}
+
+.container-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  border: #99acf1 solid 2px;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  margin: 15px;
+  max-width: 400px;
+  justify-content: center;
+
+  &:hover {
+    transition: ease-out 0.5s;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    border: #99acf1 solid 2.5px;
+  }
+}
+
+.project-title {
+  grid-row: 1;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-image {
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+
+  img {
+    height: 200px;
+  }
+}
+
+.project-details {
+  grid-row: 3;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .coding-projects-container {
+    grid-column: 1;
+    grid-row: 1;
+    // max-width: ;
+  }
+
+  .data-projects-container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

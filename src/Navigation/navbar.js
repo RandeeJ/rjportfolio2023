@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   render() {
@@ -9,18 +9,66 @@ class NavBar extends Component {
 
         <div className="navbar-links">
           <div className="navbar-link home">
-            <Link to="/">HOME</Link>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "white",
+                      background: "rgba(0, 0, 0, 0.2)",
+                    }
+                  : { color: "#4623f7" }
+              }
+            >
+              HOME
+            </NavLink>
           </div>
           <div className="navbar-link projects">
-            <Link to="/myProjects">MY PROJECTS</Link>
+            <NavLink
+              to="/myProjects"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "white",
+                      background: "rgba(0, 0, 0, 0.2)",
+                    }
+                  : { color: "#4623f7" }
+              }
+            >
+              MY PROJECTS
+            </NavLink>
           </div>
 
           <div className="navbar-link journal">
-            <Link to="/codingJournal">CODING JOURNAL</Link>
+            <NavLink
+              to="/codingJournal"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "white",
+                      background: "rgba(0, 0, 0, 0.2)",
+                    }
+                  : { color: "#4623f7" }
+              }
+            >
+              CODING JOURNAL
+            </NavLink>
           </div>
 
           <div className="navbar-link mathematizedmind">
-            <Link to="/theMathematizedMind">THE MATHEMATIZED MIND</Link>
+            <NavLink
+              to="/theMathematizedMind"
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      color: "white",
+                      background: "rgba(0, 0, 0, 0.2)",
+                    }
+                  : { color: "#4623f7" }
+              }
+            >
+              THE MATHEMATIZED MIND
+            </NavLink>
           </div>
         </div>
       </div>

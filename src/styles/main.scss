@@ -2,10 +2,12 @@
 @use "navbar";
 // @use "homepage";
 @use "about";
+@use "projectPage";
 
 @use "blogSearch";
 @use "blogList";
 @use "blogItem";
+@use "blogPost";
 @use "categoryLabels";
 
 html {

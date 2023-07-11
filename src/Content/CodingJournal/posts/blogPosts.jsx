@@ -28,14 +28,16 @@ export const BlogPosts = [
 <Route path='/about' element={<About />} />`}],
     myName: "Randee Johnson",
     // myAvatar: ,
-    referenceLink: (
-      <a href="https://reactrouter.com/en/main/upgrading/v5">
-        Upgrading from v5 to v6.6.2 | React Router
-      </a>
-    ),
+    referenceLink: [{type:"link", value: "https://reactrouter.com/en/main/upgrading/v5",title:"Upgrading from v5 to v6.6.2 | React Router"}],
     createdAt: "Jan 17 2023",
     // cover:
   },
+
+
+
+
+
+
   {id: 2,
     title: "Getting Code to look like Code...",
     // category: ,
@@ -63,21 +65,44 @@ export const BlogPosts = [
                 
     myName: "Randee Johnson",
     // myAvatar: ,
-    referenceLink: (
-      <a href="https://stackoverflow.com/questions/29460205/how-to-embed-literal-code-snippet-within-react-jsx-component">
-      How to embed literal {`<code>`} snippet within React/JSX component?
-      </a>
-    ),
+    referenceLink: [{type: "link", value:"https://stackoverflow.com/questions/29460205/how-to-embed-literal-code-snippet-within-react-jsx-component",title: "How to embed literal {`<code>`} snippet within React/JSX component"}],
     createdAt: "Jan 17 2023",
     // cover:
-  }
+  },
+
+
+
+
+
+
+
+  {id: 3,
+      title: "SCSS/SASS Upgrade: @use instead of @import",
+      // category: ,
+      // subCategory: ,
+      content: [{type: "text", value:"The SCSS language has been upgraded. If you are trying to import style files, you can no longer use" },
+    {type: "code", value: "@import style_filename.scss"},
+  {type: "text", value: "Now, you must use"},
+{type: "code", value: "@use style_filename.scss"},
+{type: "text", value: "It's a small tweak, but it's new and if you're wondering why your style files wont import between each other, ...@use is why."}],
+      myName: "Randee Johnson",
+      // myAvatar: ,
+      referenceLink: [{type:"link", value:"https://sass-lang.com/documentation/at-rules/import", title:"SASS documentation: @import"}, 
+      {type: "link", value:"https://sass-lang.com/documentation/at-rules/use", title: "SASS documentation: @use"}],
+      createdAt: "Feb 21 2023",
+      // cover:
+    }
+
+
+
+
 ];
 
 // {id: ,
 //   title: ,
 //   // category: ,
 //   // subCategory: ,
-//   description: ,
+//   content: [{}],
 //   myName: "Randee Johnson",
 //   // myAvatar: ,
 //   referenceLink: (

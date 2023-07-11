@@ -23,15 +23,18 @@ class About extends Component {
         <div className="about-me-bio">
           <div className="about-me-bio-introduction">{greeting()}</div>
           <div className="about-me-bio-bio">
+            <p>Born and raised in New York City (There's no place like it!).</p>
             <p>
-              My name is Randee. I am born and raised in New York City and can
-              truly say that there is no place like it! For the past decade, I
-              have taught 7th-grade math, and for the past few years, I have
-              been exploring my interest in web development. I have quite the
-              curious mind; the gears are always turning and I am surely one to
-              ask lots of questions. I love to learn and I love to solve
-              puzzles. If you ever need an escape room partner, I'm the one!
-              (Seriously.)
+              For the past decade, I have taught 7th-grade math; for the past
+              few years, I have been exploring my interest in web development;
+              and for the past few months, I have been exploring the world of
+              data analytics.{" "}
+            </p>{" "}
+            <p>
+              I have quite the curious mind; the gears are always turning and I
+              am surely one to ask lots of questions. I love to learn and I love
+              to solve puzzles. If you ever need an escape room partner, I'm the
+              one! (Seriously.)
             </p>
             <p>Let's see, what else?</p>
             <ul>

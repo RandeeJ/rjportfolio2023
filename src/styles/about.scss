@@ -40,13 +40,20 @@
   background-color: #0a66c2;
   padding: 10px;
   border-radius: 10%;
-  box-shadow: 3px 3px 3px 0px lavender;
+  box-shadow: 2px 2px 2px 0px lavender;
   border: white;
   font-size: 20px;
   width: 120px;
   justify-self: center;
   cursor: pointer;
   z-index: 1;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.15em);
+    box-shadow: 3px 3px 3px 0px lavender;
+  }
 
   a {
     text-decoration: none;
@@ -73,6 +80,10 @@
 }
 
 .about-me-bio-bio {
+  border: #99acf1 solid 5px;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
   grid-column: 2;
   grid-row: 2;
   font-size: 20px;
